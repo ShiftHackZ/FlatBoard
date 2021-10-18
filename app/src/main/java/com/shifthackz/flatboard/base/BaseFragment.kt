@@ -11,6 +11,7 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<V : ViewBinding> : Fragment() {
 
     protected lateinit var binding: V
+
     abstract val inflater: (LayoutInflater, ViewGroup?, Boolean) -> V
 
     override fun onCreateView(

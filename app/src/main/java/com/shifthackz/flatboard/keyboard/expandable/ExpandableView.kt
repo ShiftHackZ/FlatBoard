@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.keyboard.expandableView
+package com.shifthackz.flatboard.keyboard.expandable
 
 import android.content.Context
 import android.util.AttributeSet
