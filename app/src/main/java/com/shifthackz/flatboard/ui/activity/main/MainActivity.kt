@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.shifthackz.flatboard.ui.fragment.main.MainFragment
 import com.shifthackz.flatboard.databinding.ActivityMainBinding
-import com.shifthackz.flatboard.ui.base.BaseActivity
+import com.shifthackz.flatboard.base.BaseActivity
 import com.shifthackz.flatboard.utils.Constants.MAIN_SCREEN_TITLE
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {

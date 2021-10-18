@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.ui.base
+package com.shifthackz.flatboard.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

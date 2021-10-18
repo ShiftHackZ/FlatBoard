@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.ui.viewpager_adapter
+package com.shifthackz.flatboard.ui.activity.splash
 
 import android.content.Context
 import android.view.LayoutInflater
