@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Flatboard</string>
+    <string name="customQwerty">Enter your text here</string>
+    <string name="previous_btn_text"><![CDATA[<]]></string>
+    <string name="next_btn_text"><![CDATA[>]]></string>
+
+    <string name="EXTRAS_FONT_ID">extras_font_id</string>
+    <string name="EXTRAS_FONT_ID_SEL">extras_font_id_sel</string>
+    <string name="EXTRAS_NUM_ID">extras_num_id</string>
+    <string name="EXTRAS_NUM_ID_SEL">extras_num_id_sel</string>
+
+    <string name="font_detail_title">Select font</string>
+    <string name="numeric_detail_title">Select numbers set</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
