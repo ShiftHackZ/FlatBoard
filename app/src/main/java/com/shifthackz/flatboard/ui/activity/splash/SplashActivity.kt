@@ -8,8 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import com.shifthackz.flatboard.databinding.ActivitySplashBinding
 import com.shifthackz.flatboard.ui.activity.main.MainActivity
-import com.shifthackz.flatboard.ui.base.BaseActivity
-import com.shifthackz.flatboard.ui.viewpager_adapter.SplashViewPagerAdapter
+import com.shifthackz.flatboard.base.BaseActivity
 
 class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 

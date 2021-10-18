@@ -16,7 +16,41 @@ abstract class BaseNumeric {
 
     abstract fun getNumericName(): String
 
-    open fun getRenderedSample(): String {
-        return "$one $two $three $four $five $six $seven $eight $nine $zero"
+    open fun getRenderedSample(): String = "$one $two $three $four $five $six $seven $eight $nine $zero"
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as BaseNumeric
+
+        if (zero != other.zero) return false
+        if (one != other.one) return false
+        if (two != other.two) return false
+        if (three != other.three) return false
+        if (four != other.four) return false
+        if (five != other.five) return false
+        if (six != other.six) return false
+        if (seven != other.seven) return false
+        if (eight != other.eight) return false
+        if (nine != other.nine) return false
+        if (numericType != other.numericType) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = zero.hashCode()
+        result = 31 * result + one.hashCode()
+        result = 31 * result + two.hashCode()
+        result = 31 * result + three.hashCode()
+        result = 31 * result + four.hashCode()
+        result = 31 * result + five.hashCode()
+        result = 31 * result + six.hashCode()
+        result = 31 * result + seven.hashCode()
+        result = 31 * result + eight.hashCode()
+        result = 31 * result + nine.hashCode()
+        result = 31 * result + numericType.hashCode()
+        return result
     }
 }

@@ -9,10 +9,9 @@ import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.shifthackz.flatboard.R
 import com.shifthackz.flatboard.databinding.ActivityFontDetailBinding
-import com.shifthackz.flatboard.ui.base.BaseActivity
-import com.shifthackz.flatboard.ui.recyclerview.adapter.FontDetailAdapter
+import com.shifthackz.flatboard.base.BaseActivity
 import com.shifthackz.flatboard.usecases.AvailableFonts
-import java.util.*
+import com.shifthackz.flatboard.utils.Constants.FONT_SCREEN_TITLE
 
 class FontDetailActivity : BaseActivity<ActivityFontDetailBinding>() {
 
@@ -20,17 +19,13 @@ class FontDetailActivity : BaseActivity<ActivityFontDetailBinding>() {
         get() = ActivityFontDetailBinding::inflate
 
     private var fontId: Int = 0
-    private lateinit var adapter : FontDetailAdapter
+    private lateinit var adapter: FontDetailAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initUI()
         initRecyclerView()
-        supportActionBar?.title = "\uD835\uDC7A\uD835\uDC86\uD835\uDC8D\uD835\uDC86\uD835\uDC84\uD835\uDC95 \uD835\uDC87\uD835\uDC90\uD835\uDC8F\uD835\uDC95"
-    }
-
-    override fun onBackPressed() {
-        finish()
+        supportActionBar?.title = FONT_SCREEN_TITLE
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -41,7 +36,7 @@ class FontDetailActivity : BaseActivity<ActivityFontDetailBinding>() {
     }
 
     private fun initUI() {
-        Objects.requireNonNull(supportActionBar)?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = getString(R.string.font_detail_title)
         fontId = intent.getIntExtra(getString(R.string.EXTRAS_FONT_ID), 0)
         binding.btnApplyFont.setOnClickListener {
@@ -57,7 +52,7 @@ class FontDetailActivity : BaseActivity<ActivityFontDetailBinding>() {
     }
 
     private fun initRecyclerView() {
-        adapter = FontDetailAdapter(this, AvailableFonts.fontList, fontId)
+        adapter = FontDetailAdapter(fontId).apply { submitList(AvailableFonts.fontList) }
         binding.rvFontDetail.layoutManager = LinearLayoutManager(this)
         binding.rvFontDetail.adapter = adapter
     }

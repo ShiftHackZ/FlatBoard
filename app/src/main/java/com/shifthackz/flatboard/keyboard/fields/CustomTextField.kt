@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.keyboard.textFields
+package com.shifthackz.flatboard.keyboard.fields
 
 import android.content.Context
 import android.graphics.Color

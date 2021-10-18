@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.ui.viewpager_adapter
+package com.shifthackz.flatboard.ui.fragment.main
 
 import android.content.Context
 import com.shifthackz.flatboard.keyboard.font.base.BaseFont

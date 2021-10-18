@@ -2,7 +2,6 @@ package com.shifthackz.flatboard.keyboard.logic
 
 import android.content.Context
 import android.graphics.Color
-import android.inputmethodservice.Keyboard
 import android.text.InputType
 import android.util.AttributeSet
 import android.view.View
@@ -12,9 +11,9 @@ import android.view.inputmethod.InputConnection
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
-import com.shifthackz.flatboard.keyboard.expandableView.ExpandableState
-import com.shifthackz.flatboard.keyboard.expandableView.ExpandableStateListener
-import com.shifthackz.flatboard.keyboard.expandableView.ExpandableView
+import com.shifthackz.flatboard.keyboard.expandable.ExpandableState
+import com.shifthackz.flatboard.keyboard.expandable.ExpandableStateListener
+import com.shifthackz.flatboard.keyboard.expandable.ExpandableView
 import com.shifthackz.flatboard.keyboard.font.base.BaseFont
 import com.shifthackz.flatboard.keyboard.logic.controllers.DefaultKeyboardController
 import com.shifthackz.flatboard.keyboard.logic.controllers.KeyboardController

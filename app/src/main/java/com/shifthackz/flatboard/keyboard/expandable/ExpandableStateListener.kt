@@ -1,4 +1,4 @@
-package com.shifthackz.flatboard.keyboard.expandableView
+package com.shifthackz.flatboard.keyboard.expandable
 
 interface ExpandableStateListener {
     fun onStateChange(state: ExpandableState)
